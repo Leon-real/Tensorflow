@@ -6,22 +6,20 @@
     3. sess = tensorflow.Session() 함수를 통하여서 세션 생성해준다
     4. sess.run() 함수를 통하여서 세션 실행
     ```python
-import tensorflow as tf
+    import tensorflow as tf
 
-# 노드 설정
-x = tf.constant("Hello")
+    # 노드 설정
+    x = tf.constant("Hello")
 
-# 세션 설정
-sess = tf.Session()
+    # 세션 설정
+    sess = tf.Session()
 
-# 세션 실행
-print(sess.run(x)) # Hello가 출력된다.
-```
+    # 세션 실행
+    print(sess.run(x)) # Hello가 출력된다.
+    ```
 
 - Tensorflow로 간단한 Linear Regression 구현하기
     - cost function(loss function) ⇒ H(x) = Wx + b
-
-        ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b701c1db-7664-4806-b7b2-a7d8f1bb9e53/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b701c1db-7664-4806-b7b2-a7d8f1bb9e53/Untitled.png)
 
     ```python
     import tensorflow as tf
